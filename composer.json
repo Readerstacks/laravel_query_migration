@@ -1,5 +1,5 @@
 {
-    "name": "readersatcks/querymigration",
+    "name": "readerstacks/querymigration",
     "description": "Migrate custom raw query",
     "type": "library",
     "license": "MIT",
