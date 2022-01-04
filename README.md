@@ -1,2 +1,1 @@
-# laravel_query_migration
-laravel_query_migration
+# Laravel custom raw query migration 

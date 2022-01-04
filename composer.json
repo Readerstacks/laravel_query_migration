@@ -1,0 +1,27 @@
+{
+    "name": "readersatcks/querymigration",
+    "description": "Migrate custom raw query",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "readerstacks",
+            "email": "info@readerstacks.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Readerstacks\\QueryMigration\\":"src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Readerstacks\\QueryMigration\\QueryMigrationServiceProvider"
+            ]
+             
+        }
+    }
+}
