@@ -1,7 +1,7 @@
 {
     "name": "readersatcks/querymigration",
     "description": "Migrate custom raw query",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
