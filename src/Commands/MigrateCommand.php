@@ -85,7 +85,7 @@ class MigrateCommand extends Command {
                     {
                           
                         try{
-                            \DB::statement($qr['query']);
+                            \DB::unprepared($qr['query']);
                             
                         }
                         catch(\Exception $e){
@@ -110,7 +110,7 @@ class MigrateCommand extends Command {
 
                 $queries[$k]=["query"=>"$qr","name"=>"UNKNOWN","time"=>time(),"uid"=>uniqid()];
                 try{
-                    \DB::statement($qr);
+                    \DB::unprepared($qr);
                 }
                 catch(\Exception $e){
                     echo $e->getMessage() ." $qr" ;
@@ -139,7 +139,7 @@ class MigrateCommand extends Command {
                     {
                           
                         try{
-                            \DB::statement($qr['query']);
+                            \DB::unprepared($qr['query']);
                             
                         }
                         catch(\Exception $e){
