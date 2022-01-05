@@ -113,6 +113,7 @@ return  [
         ]
                         
 ];
+```
 
 #### Check pending migrations
 
