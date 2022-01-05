@@ -29,7 +29,7 @@ The first step is using composer to install the package and automatically update
 composer require readerstacks/querymigration
 ```
 
-> **Note**: If you are using Laravel 5.5, the steps 2 and 3, for providers and aliases, are unnecessaries. QieryMigrations supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
+> **Note**: If you are using Laravel 5.5, the steps 2  for providers and aliases, are unnecessaries. QieryMigrations supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
 
 ### 2 - Provider
 
@@ -109,6 +109,25 @@ return  [
         "queries"=>[
             
             "ALTER TABLE `sequence_numbers` ADD `test` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`",
+            "ALTER TABLE `sequence_numbers` ADD `test2` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`"
+        ]
+                        
+];
+```
+
+
+ ### NOTE :
+
+ If you want to skip the query for current system theen you need to add it in array as below
+
+```php
+<?php 
+
+<?php 
+return  [
+        "queries"=>[
+            
+            [ "ALTER TABLE `sequence_numbers` ADD `test` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`" ], // this will skip the query for current system
             "ALTER TABLE `sequence_numbers` ADD `test2` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`"
         ]
                         
