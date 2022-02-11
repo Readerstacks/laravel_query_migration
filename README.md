@@ -88,7 +88,7 @@ php artisan vendor:publish --provider="Readerstacks\QueryMigration\QueryMigratio
 In your terminal type
 
 ```shell
-php artisan migrate
+php artisan QueryMigrate
 ```
 
 
@@ -99,40 +99,24 @@ Usage
 ### Laravel Usage
 
 
-Add Query to query_migration_config.php
+Add Query 
 
-```php
-<?php 
+```shell
 
-<?php 
-return  [
-        "queries"=>[
-            
-            "ALTER TABLE `sequence_numbers` ADD `test` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`",
-            "ALTER TABLE `sequence_numbers` ADD `test2` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`"
-        ]
-                        
-];
+php artisan QueryMigrate add --run
+
 ```
 
+This will ask to enter the query to update the migration file and also run the query in database
 
- ### NOTE :
+If you want to update the migration and not wanted to run in database then remove --run option as below
 
- If you want to skip the query for current system theen you need to add it in array as below
+```shell
 
-```php
-<?php 
+php artisan QueryMigrate add 
 
-<?php 
-return  [
-        "queries"=>[
-            
-            [ "ALTER TABLE `sequence_numbers` ADD `test` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`" ], // this will skip the query for current system
-            "ALTER TABLE `sequence_numbers` ADD `test2` VARCHAR(255) NULL DEFAULT NULL AFTER `formated_year_seq`"
-        ]
-                        
-];
 ```
+
 
 #### Check pending migrations
 
