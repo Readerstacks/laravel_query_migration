@@ -133,7 +133,38 @@ In your terminal type
 ```shell
 php artisan QueryMigrate migrate
 ```
- 
+
+#### List all migration
+
+In your terminal type
+
+```shell
+php artisan QueryMigrate list 
+```
+
+#### Remove all migration queries
+
+In your terminal type
+
+```shell
+php artisan QueryMigrate removeAll 
+```
+
+#### Remove single migration queries
+
+In your terminal type
+
+```shell
+php artisan QueryMigrate remove --uid=id
+```
+
+#### Check pending migration queries
+
+In your terminal type
+
+```shell
+php artisan QueryMigrate pedding
+```
 
 #### Run single migration only
 
@@ -142,6 +173,7 @@ In your terminal type
 ```shell
 php artisan QueryMigrate migrate --uid=uid_of_migration 
 ```
+
  
 #### Run single migration again
 
