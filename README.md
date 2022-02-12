@@ -2,7 +2,7 @@
     <a href="https://github.com/readerstacks" target="_blank">
         <img src="https://i0.wp.com/readerstacks.com/wp-content/uploads/2021/10/Screenshot_2021-10-30_at_11.21.33_AM-removebg-preview-5-1.png?w=500&ssl=1" height="100px">
     </a>
-    <h1 align="center">Laravel Query Migration</h1>
+    <h1 align="center">Laravel Raw Sql Query Migration</h1>
     <br>
 </p>
 
