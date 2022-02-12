@@ -88,7 +88,7 @@ php artisan vendor:publish --provider="Readerstacks\QueryMigration\QueryMigratio
 In your terminal type
 
 ```shell
-php artisan QueryMigrate
+php artisan migrate
 ```
 
 
